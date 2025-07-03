@@ -4,8 +4,8 @@
   <title>Json</title>
 </head>
 <body>
-  <script>
-    let product = {
+  
+     <!-- let product = {
       name: 'TShirt',
       price: 789,
       rating: {
@@ -22,7 +22,22 @@
 
     let newProduct = JSON.patrse(str);
     console.log(typeof newProduct); // object   
-    console.log(newProduct);
+    console.log(newProduct); -->
+<script>
+
+  let product = {
+      name: 'TShirt',
+      price: 789,
+      rating: {
+        stars: 4.5,
+      noOfReviews: 453,
+    },
+   };
+  //localStorage.setItem('Name', 'Sonu Kumar');
+  //localStorage.setItem('Age', '25');
+  //console.log(localStorage.getItem('Name')); // Sonu Kumar
+  localStorage.setItem('product', product);
+
   </script>
   
 </body>
